@@ -28,7 +28,7 @@ public class MockTask extends EntityCheckable {
 
     @Override
     public void setDone(boolean isDone){
-        System.out.println("is it here ?");
+        System.out.println("Yes ! now everything is mocked");
         this.isDone = true;
     }
 
