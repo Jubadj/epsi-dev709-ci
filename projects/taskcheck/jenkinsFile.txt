@@ -12,7 +12,7 @@ pipeline {
         stage('clean'){
             steps{
                 dir ('projects/taskcheck'){
-               bat './mvnw clean' 
+               bat './mvn clean' 
               
     }
                 
@@ -22,7 +22,7 @@ pipeline {
             steps{
                 dir ('projects/taskcheck'){
              
-               bat './mvnw compile'
+               bat './mvn compile'
                
     }
                 
@@ -32,7 +32,7 @@ pipeline {
             steps{
                 dir ('projects/taskcheck'){
                
-               bat './mvnw test'
+               bat './mvn test'
                
     }
                 
@@ -42,7 +42,7 @@ pipeline {
             steps{
                 dir ('projects/taskcheck'){
               
-               bat './mvnw package'
+               bat './mvn package'
               
     }
                 
