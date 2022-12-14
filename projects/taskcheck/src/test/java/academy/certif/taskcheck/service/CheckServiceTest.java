@@ -30,7 +30,6 @@ public class CheckServiceTest {
 
     @Test
     public void testCheck() {
-//        Task task = new Task(7, "Mettre des chaussettes");
         EntityCheckable task = taskProvider.find(1);
         assertFalse(task.isDone());
         CheckServiceTest.checkService.check(1);

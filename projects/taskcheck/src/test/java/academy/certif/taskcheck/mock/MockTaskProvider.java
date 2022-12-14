@@ -22,15 +22,9 @@ public class MockTaskProvider extends EntityCheckableProvider {
         return results;
     }
 
-//    @Override
-//    public EntityCheckable find(int id) {
-//        EntityCheckable task = new Task(id, "Mettre des chaussettes");
-//        return task;
-//    }
 
     @Override
     public void setDone(int id, boolean isDone) {
-        System.out.println("it fucking here : MockTaskProvider.setDone");
         EntityCheckable entity = this.find(id);
         entity.setDone(true);
     }
