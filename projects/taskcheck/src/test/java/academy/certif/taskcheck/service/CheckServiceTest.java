@@ -6,6 +6,7 @@ import academy.certif.taskcheck.mock.MockTaskProvider;
 import academy.certif.taskcheck.provider.EntityCheckableProvider;
 import org.junit.*;
 import org.junit.Assert;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;
 
@@ -16,7 +17,7 @@ public class CheckServiceTest {
     private static EntityCheckableProvider taskProvider ;
     private static CheckService checkService ;
 
-    @BeforeClass
+    @BeforeEach
     public static void init(){
         CheckServiceTest.taskProvider = new MockTaskProvider();
         CheckServiceTest.checkService = new CheckService(taskProvider);
